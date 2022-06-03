@@ -1,3 +1,5 @@
+#reminder setup 
+
 init 5 python:
     addEvent(
         Event(
@@ -13,11 +15,13 @@ init 5 python:
 
 
 label hymod_intro:
-    m "[player], of course! Thanks for asking me to~"
+    m "[player], of course! Thanks for asking me to!"
+    m "Your health is really important to me, you know that."
+    m "And this is a huge step on improving it!"
 
-    m "It's usually recommended to grab a glass every hour, is it okay with you?{nw}"
+    m "It's usually recommended to grab a glass of water every hour, is that okay with you?{nw}"
     menu:
-        m "It's usually recommended to grab a glass every hour, is it okay with you?{fast}"
+        m "It's usually recommended to grab a glass of water every hour, is that okay with you?{fast}"
 
         "Yep!":
             $ interval = store.hyMod_reminder_utils.INTERVAL_HOURLY_1
@@ -44,7 +48,7 @@ label hymod_intro:
 
     return "derandom"
 
-
+#stop reminder
 init 5 python:
     addEvent(
         Event(
@@ -82,6 +86,9 @@ init 5 python:
 
 label hyMod_reminder:
     m "Hey, [player]! It's time to drink water~"
+    m "Try to drink a full cup, okay?"
+    m "Or at least half~"
+    m "Thank you for taking care of yourself, [mas_get_player_nickname()]!"
 
     # Do not move this anywhere, this must be above the return.
     $ store.hyMod_reminder.extendCurrentReminder()
