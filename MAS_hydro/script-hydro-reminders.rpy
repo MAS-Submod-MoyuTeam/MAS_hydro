@@ -1,12 +1,17 @@
 #reminder setup 
 
+#fix the following label and delete this note later :D 
+#it has to have the conditional that it only shows up as a prompt if you've seen the random intro topic.
+#no need to be bookmarkable or show up in repeat conversation, none of the events on this file.
+
 init 5 python:
     addEvent(
         Event(
             persistent.event_database,
-            eventlabel="hymod_intro",
+            eventlabel="hymod_reminders",
             prompt="Can you remind me about drinking water?",
             category=["health"],
+            conditional="seen_event('hyMod_intro')"
             pool=True,
             unlocked=True,
             rules={"bookmark_rule": store.mas_bookmarks_derand.WHITELIST}
@@ -14,7 +19,7 @@ init 5 python:
     )
 
 
-label hymod_intro:
+label hymod_reminders:
     m "[player], of course! Thanks for asking me to!"
     m "Your health is really important to me, you know that."
     m "And this is a huge step on improving it!"
