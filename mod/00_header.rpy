@@ -11,8 +11,8 @@ init -989 python:
         store.sup_utils.SubmodUpdater(
             submod="MAS Hydration Reminder Submod",
             user_name="my-otter-self",
-            repository_name="mas_reminders",
-            submod_dir="/Submods/MAS Self Harm Submod",
+            repository_name="MAS_hydro",
+            submod_dir="/Submods/MAS Hydration Reminder Submod",
             extraction_depth=3,
             redirected_files=(
                 "README.md",
