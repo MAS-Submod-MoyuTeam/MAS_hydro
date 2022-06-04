@@ -13,7 +13,7 @@ init 5 python:
             category=["health"],
             conditional="seen_event('hyMod_topic_intro')",
             pool=True,
-            unlocked=True
+            action=EV_ACT_UNLOCK
         )
     )
 
