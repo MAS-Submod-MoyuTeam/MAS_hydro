@@ -17,7 +17,7 @@ init 5 python:
         )
     )
 
-label hymod_reminders:
+label hyMod_reminder_start:
     m "[player], of course! Thanks for asking me to!"
     m "Your health is really important to me, you know that."
     m "And this is a huge step on improving it!"
