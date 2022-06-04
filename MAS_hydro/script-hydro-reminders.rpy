@@ -37,7 +37,7 @@ label hyMod_reminder_start:
         "How about every 6 hours?":
             $ interval = store.hyMod_reminder_utils.INTERVAL_HOURLY_6
 
-        m "Alrighty then! I'll be sure to remind you about it every few hours, [mas_get_player_nickname()]~"
+    m "Alrighty then! I'll be sure to remind you about it every few hours, [mas_get_player_nickname()]~"
 
 label .add_reminder:
     python:
