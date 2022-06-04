@@ -15,6 +15,7 @@ init -989 python:
             submod_dir="/Submods/MAS Self Harm Submod",
             extraction_depth=3,
             redirected_files=(
-                "README.md"
+                "README.md",
+                "LICENSE.txt"
             )
         )
