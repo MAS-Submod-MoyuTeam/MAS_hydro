@@ -46,7 +46,7 @@ label .add_reminder:
             datetime.timedelta(seconds=3600), interval, store.hyMod_reminder_utils.LATENCY_HOURLY
         )
 
-        mas_hideEVL("hyMod_intro", "EVE", lock=True)
+        mas_hideEVL("hyMod_reminder_start", "EVE", lock=True)
         mas_showEVL("hyMod_reminder_stop", "EVE", unlock=True)
 
     return "derandom"
@@ -71,7 +71,7 @@ label hyMod_reminder_stop:
         # Same here, DO NOT move this anywhere, this has to be right above the return statement.
         store.hyMod_reminder.stopReminder("hyMod_reminder_event")
         mas_hideEVL("hyMod_reminder_stop", "EVE", lock=True)
-        mas_showEVL("hyMod_intro", "EVE", unlock=True)
+        mas_showEVL("hyMod_reminder_start", "EVE", unlock=True)
 
     return
 
