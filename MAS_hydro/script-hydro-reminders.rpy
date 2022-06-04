@@ -28,21 +28,18 @@ label hyMod_reminder_start:
 
         "Yep!":
             $ interval = store.hyMod_reminder_utils.INTERVAL_HOURLY_1
-            jump .hourly_1
+            m "Alrighty then! I'll be sure to remind you about it hourly, [mas_get_player_nickname()]~"
+            jump .add_reminder
 
         "Maybe every 3 hours?":
             $ interval = store.hyMod_reminder_utils.INTERVAL_HOURLY_3
-            jump .hourly_2
 
         "How about every 6 hours?":
             $ interval = store.hyMod_reminder_utils.INTERVAL_HOURLY_6
-            jump .hourly_2
 
-label .hourly_1:
-    m "Alrighty then! I'll be sure to remind you about it hourly, [mas_get_player_nickname()]~"
-label .hourly_2:
-    m "Alrighty then! I'll be sure to remind you about it every few hours, [mas_get_player_nickname()]~"
+        m "Alrighty then! I'll be sure to remind you about it every few hours, [mas_get_player_nickname()]~"
 
+label .add_reminder:
     python:
         store.hyMod_reminder.addRecurringReminder(
             "hyMod_reminder_event",
