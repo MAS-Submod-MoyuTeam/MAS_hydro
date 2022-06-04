@@ -3,9 +3,6 @@
   with reminders and new random events</h3>
 
 <p align="center">
-  <a href="https://github.com/my-otter-self/mas_hydro/actions/workflows/lint-on-push.yml">
-    <img alt="Build status" src="https://img.shields.io/github/workflow/status/my-otter-self/mas_hydro/Lint%20source%20tree%20on%20push/main">
-  </a>
   <a href="https://github.com/my-otter-self/mas_hydro/releases/latest">
     <img alt="Latest release" src="https://img.shields.io/github/v/release/my-otter-self/mas_hydro">
   </a>
