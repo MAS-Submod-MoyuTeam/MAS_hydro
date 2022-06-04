@@ -90,7 +90,7 @@ init 5 python:
         )
     )
 
-label hyMod_reminder:
+label hyMod_reminder_event:
     m "Hey, [player]! It's time to drink water~"
     m "Try to drink a full cup, okay?"
     m "Or at least half~"
