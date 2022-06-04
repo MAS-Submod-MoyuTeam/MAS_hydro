@@ -1,9 +1,7 @@
-#ALL EVENTS HERE MUST BE BOOKMARKABLE
-
 init 5 python in mas_bookmarks_derand:
     label_prefix_map["hyMod_topic_"] = label_prefix_map["monika_"]
 
-
+#importance of drinking water
 init 5 python:
     addEvent(
         Event(
@@ -34,7 +32,7 @@ label hyMod_topic_intro:
     m 5hsblb "Await for the next 'Monika's health tip of the day'!"
     return
 
-
+#tips to drink more water
 init 5 python:
     addEvent(
         Event(
@@ -73,7 +71,7 @@ label hyMod_topic_tips:
     m 5fsbla "I love you, [mas_get_player_nickname()]!"
     return "love"
 
-
+#signs of dehydration
 init 5 python:
     addEvent(
         Event(
