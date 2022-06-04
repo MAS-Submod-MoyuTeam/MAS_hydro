@@ -3,6 +3,9 @@
   with reminders and new random events</h3>
 
 <p align="center">
+  <a href="https://github.com/my-otter-self/mas_hydro/actions/workflows/lint-on-push.yml">
+    <img alt="Build status" src="https://img.shields.io/github/workflow/status/my-otter-self/mas_hydro/Lint%20source%20tree%20on%20push/main">
+  </a>
   <a href="https://github.com/my-otter-self/mas_hydro/releases/latest">
     <img alt="Latest release" src="https://img.shields.io/github/v/release/my-otter-self/mas_hydro">
   </a>
@@ -39,7 +42,7 @@ This submod was created by these people:
 </p>
 
 **Note:** CC BY-NC-ND 4.0 only covers content created by authors, contributors or maintainers of this mod (repository) and does not cover
-anything that was created by third party (as attributed in [Credits](https://github.com/my-otter-self/mas_hydro/wiki/%F0%9F%93%9D-Credits) wiki page.)
+anything that was created by third party (as attributed in [Credits](https://github.com/my-otter-self/MAS_hydro/wiki/%F0%9F%93%9D-Credits) wiki page.)
 
 
 ## 💬 Join our Discord
