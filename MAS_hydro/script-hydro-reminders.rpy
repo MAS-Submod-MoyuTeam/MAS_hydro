@@ -1,23 +1,21 @@
-#reminder setup 
+#reminder setup
 
-#fix the following label and delete this note later :D 
-#it has to have the conditional that it only shows up as a prompt if you've seen the random intro topic.
-#no need to be bookmarkable or show up in repeat conversation, none of the events on this file.
+init 5 python in mas_bookmarks_derand:
+    label_prefix_map["hyMod_reminder_"] = label_prefix_map["monika_"]
+
 
 init 5 python:
     addEvent(
         Event(
             persistent.event_database,
-            eventlabel="hymod_reminders",
+            eventlabel="hyMod_reminder_start",
             prompt="Can you remind me about drinking water?",
             category=["health"],
-            conditional="seen_event('hyMod_intro')"
+            conditional="seen_event('hyMod_topic_intro')"
             pool=True,
-            unlocked=True,
-            rules={"bookmark_rule": store.mas_bookmarks_derand.WHITELIST}
+            unlocked=True
         )
     )
-
 
 label hymod_reminders:
     m "[player], of course! Thanks for asking me to!"
@@ -30,21 +28,24 @@ label hymod_reminders:
 
         "Yep!":
             $ interval = store.hyMod_reminder_utils.INTERVAL_HOURLY_1
+            jump .hourly_1
 
         "Maybe every 3 hours?":
             $ interval = store.hyMod_reminder_utils.INTERVAL_HOURLY_3
+            jump .hourly_2
 
         "How about every 6 hours?":
             $ interval = store.hyMod_reminder_utils.INTERVAL_HOURLY_6
+            jump .hourly_2
 
-    if interval == store.hyMod_reminder_utils.INTERVAL_HOURLY_1:
-        m "Alrighty then! I'll be sure to remind you about it hourly, [mas_get_player_nickname()]~"
-    else:
-        m "Alrighty then! I'll be sure to remind you about it every few hours, [mas_get_player_nickname()]~"
+label .hourly_1:
+    m "Alrighty then! I'll be sure to remind you about it hourly, [mas_get_player_nickname()]~"
+label .hourly_2:
+    m "Alrighty then! I'll be sure to remind you about it every few hours, [mas_get_player_nickname()]~"
 
     python:
         store.hyMod_reminder.addRecurringReminder(
-            "hyMod_reminder",
+            "hyMod_reminder_event",
             datetime.timedelta(seconds=3600), interval, store.hyMod_reminder_utils.LATENCY_HOURLY
         )
 
@@ -62,7 +63,7 @@ init 5 python:
             prompt="You no longer need to remind me about hydration.",
             category=["health"],
             pool=True,
-            rules={"no_unlock": None, "bookmark_rule": store.mas_bookmarks_derand.WHITELIST}
+            rules={"no_unlock": None}
         )
     )
 
@@ -82,10 +83,10 @@ init 5 python:
     store.hyMod_reminder.addReminderEvent(
         Event(
             persistent.event_database,
-            eventlabel="hyMod_reminder",
-            conditional="store.hyMod_reminder.shouldTriggerReminder('hyMod_reminder')",
+            eventlabel="hyMod_reminder_event",
+            conditional="store.hyMod_reminder.shouldTriggerReminder('hyMod_reminder_event')",
             action=EV_ACT_QUEUE,
-            rules={"force repeat": None}
+            rules={"force repeat": None, "bookmark_rule": store.mas_bookmarks_derand.BLACKLIST}
         )
     )
 
@@ -97,4 +98,4 @@ label hyMod_reminder:
 
     # Do not move this anywhere, this must be above the return.
     $ store.hyMod_reminder.extendCurrentReminder()
-    return "no_unlock"
+    return
