@@ -42,7 +42,7 @@ init 5 python:
             eventlabel="hyMod_topic_tips",
             prompt="Tips to drink more water",
             category=["health"],
-            conditional="seen_event('hyMod_topic_intro')"
+            conditional="seen_event('hyMod_topic_intro')",
             action=EV_ACT_RANDOM
         )
     )
@@ -81,7 +81,7 @@ init 5 python:
             eventlabel="hyMod_topic_signs",
             prompt="Signs of dehydration",
             category=["health"],
-            conditional="seen_event('hyMod_topic_intro')"
+            conditional="seen_event('hyMod_topic_intro')",
             action=EV_ACT_RANDOM
         )
     )

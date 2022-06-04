@@ -11,7 +11,7 @@ init 5 python:
             eventlabel="hyMod_reminder_start",
             prompt="Can you remind me about drinking water?",
             category=["health"],
-            conditional="seen_event('hyMod_topic_intro')"
+            conditional="seen_event('hyMod_topic_intro')",
             pool=True,
             unlocked=True
         )
