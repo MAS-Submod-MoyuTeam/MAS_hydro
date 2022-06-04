@@ -1,5 +1,6 @@
-#dialogue about hydration
+#ALL EVENTS HERE MUST BE BOOKMARKABLE
 
+#dialogue about hydration
 #fix the labels here if necessary, this event needs to be random with no conditionals, and repeatable
 
 init 5 python:
