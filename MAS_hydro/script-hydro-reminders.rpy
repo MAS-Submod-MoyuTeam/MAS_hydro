@@ -18,17 +18,17 @@ init 5 python:
     )
 
 label hyMod_reminder_start:
-    m "[player], of course! Thanks for asking me to!"
-    m "Your health is really important to me, you know that."
-    m "And this is a huge step on improving it!"
+    m 3sub "[player], of course! Thanks for asking me to!"
+    m 3hublb "Your health is really important to me, you know that."
+    m 4hubla "And this is a huge step on improving it!"
 
-    m "It's usually recommended to grab a glass of water every hour, is that okay with you?{nw}"
+    m 4lubla "It's usually recommended to grab a glass of water every hour, is that okay with you?{nw}"
     menu:
         m "It's usually recommended to grab a glass of water every hour, is that okay with you?{fast}"
 
         "Yep!":
             $ interval = store.hyMod_reminder_utils.INTERVAL_HOURLY_1
-            m "Alrighty then! I'll be sure to remind you about it hourly, [mas_get_player_nickname()]~"
+            m 1dublb "Alrighty then! I'll be sure to remind you about it hourly, [mas_get_player_nickname()]~"
             jump .add_reminder
 
         "Maybe every 3 hours?":
@@ -37,7 +37,7 @@ label hyMod_reminder_start:
         "How about every 6 hours?":
             $ interval = store.hyMod_reminder_utils.INTERVAL_HOURLY_6
 
-    m "Alrighty then! I'll be sure to remind you about it every few hours, [mas_get_player_nickname()]~"
+    m 1dublb "Alrighty then! I'll be sure to remind you about it every few hours, [mas_get_player_nickname()]~"
 
 label .add_reminder:
     python:
@@ -88,10 +88,10 @@ init 5 python:
     )
 
 label hyMod_reminder_event:
-    m "Hey, [player]! It's time to drink water~"
-    m "Try to drink a full cup, okay?"
-    m "Or at least half~"
-    m "Thank you for taking care of yourself, [mas_get_player_nickname()]!"
+    m 3subla "Hey, [player]! It's time to drink water~"
+    m 3kubla "Try to drink a full cup, okay?"
+    m 3lublb "Or at least half~"
+    m 1dubla "Thank you for taking care of yourself, [mas_get_player_nickname()]!"
 
     # Do not move this anywhere, this must be above the return.
     $ store.hyMod_reminder.extendCurrentReminder()
