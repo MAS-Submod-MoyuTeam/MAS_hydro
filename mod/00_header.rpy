@@ -1,6 +1,6 @@
 init -990 python in mas_submod_utils:
     Submod(
-        author="my-otter-self",
+        author="otter",
         name="MAS Hydration Reminder Submod",
         description="Reminders about hydration and many more!",
         version="1.0.0"
