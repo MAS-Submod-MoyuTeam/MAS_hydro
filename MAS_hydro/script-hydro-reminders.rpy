@@ -69,7 +69,7 @@ label hyMod_reminder_stop:
 
     python:
         # Same here, DO NOT move this anywhere, this has to be right above the return statement.
-        store.hyMod_reminder.stopReminder("hyMod_reminder")
+        store.hyMod_reminder.stopReminder("hyMod_reminder_event")
         mas_hideEVL("hyMod_reminder_stop", "EVE", lock=True)
         mas_showEVL("hyMod_intro", "EVE", unlock=True)
 
