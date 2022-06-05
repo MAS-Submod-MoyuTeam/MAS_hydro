@@ -46,7 +46,7 @@ init 5 python:
     )
 
 label hyMod_topic_tips:
-    m 1suu "[Player]! Here is your 'Monika's health tip of the day'!"
+    m 1suu "[player]! Here is your 'Monika's health tip of the day'!"
     m 1hub "The topic of today is tips for drinking enough water!"
     m 4dub "We've already discussed the importance of drinking lots of water, so here we go..."
     m 4lua "The first one is trying to carry a water bottle with you wherever you go."
@@ -85,7 +85,7 @@ init 5 python:
     )
 
 label hyMod_topic_signs:
-    m 1rusdld "[Player], have you noticed the signs your body show when something isn't right?"
+    m 1rusdld "[player], have you noticed the signs your body show when something isn't right?"
     m 1rusdlc "When we are in need of something, our bodies scream, demanding what isn't there."
     m 3wusdld "Speaking of which, do you know the signs of dehydration?"
     m 3duc "According to studies, some of them are headaches and fatigue."
