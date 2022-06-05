@@ -12,7 +12,7 @@ init -989 python:
             submod="MAS Hydration Submod",
             user_name="my-otter-self",
             repository_name="mas_hydro",
-            submod_dir="/Submods/MAS Hydration Reminder Submod",
+            submod_dir="/Submods/MAS Hydration Submod",
             extraction_depth=3,
             redirected_files=(
                 "README.md",
