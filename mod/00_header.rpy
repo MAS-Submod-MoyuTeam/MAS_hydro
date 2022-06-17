@@ -3,7 +3,7 @@ init -990 python in mas_submod_utils:
         author="otter and dreamscached",
         name="MAS Hydration Submod",
         description="Reminders about hydration and many more!",
-        version="1.0.1"
+        version="1.0.2"
     )
 
 init -989 python:
