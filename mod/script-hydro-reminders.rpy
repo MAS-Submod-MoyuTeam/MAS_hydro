@@ -89,6 +89,20 @@ init 5 python:
     )
 
 label hyMod_reminder_event:
+    $ mas_display_notif(
+        m_name,
+        [
+            "[player]! It's time to hydrate!",
+            "[player], it's time to drink a cup of water!",
+            "Drinking enough water every day keeps the doctor away!",
+            "If there's something that makes you feel alive… that's water!",
+            "Drink some water, [player]! Your body will thank you.",
+            "Drink your way to better health, [player]! Drink water~",
+            "Drinking water is like taking a shower on the inside!"
+        ],
+        "Window Reactions"
+    )
+
     m 3subla "Hey, [player]! It's time to drink water~"
     m 3kubla "Try to drink a full cup, okay?"
     m 3lublb "Or at least half~"
