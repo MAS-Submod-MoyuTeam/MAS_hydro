@@ -3,8 +3,17 @@
   with reminders and new random events</h3>
 
 <p align="center">
+ <a href="https://github.com/my-otter-self/MAS_period/actions/workflows/check.yml">
+    <img alt="Build status" src="https://img.shields.io/github/workflow/status/my-otter-self/MAS_hydro/Run%20checks%20on%20push">
+  </a>
   <a href="https://github.com/my-otter-self/mas_hydro/releases/latest">
     <img alt="Latest release" src="https://img.shields.io/github/v/release/my-otter-self/mas_hydro">
+  </a>
+    <a href="https://github.com/my-otter-self/MAS_hydro/releases/latest">
+    <img alt="downloads counter badge" src="https://img.shields.io/github/downloads/my-otter-self/MAS_hydro/total">
+  </a>
+   <a href="https://www.reddit.com/r/MASFandom/comments/w31cp3/period_submod_v100_release/">
+    <img alt="reddit upvotes count" src="https://img.shields.io/badge/dynamic/json?label=%F0%9D%97%8B%2Fmasfandom%20post&query=%24[0].data.children[0].data.score&suffix=%20upvotes&url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMASFandom%2Fcomments%2Fv50qya%2Fhydration_submod_v100_release.json&logo=reddit&style=social">
   </a>
   <a href="https://mon.icu/discord">
     <img alt="Discord server" src="https://discordapp.com/api/guilds/970747033071804426/widget.png?style=shield">
