@@ -1,6 +1,5 @@
-<h1 align="center">💧 MAS Hydro Submod 💧</h1>
-<h4 align="center">Hydration submod with information about hydration and the importance of drinking enough water,
-  with reminders and new random events</h3>
+<h1 align="center">💧 MAS提醒喝水子模组 💧</h1>
+<h4 align="center">提醒喝水子模组包含了一系列水合作用.有用信息和喝水的重要性，包括了新的提醒系统和新的随机事件。</h3>
 
 <p align="center">
  <a href="https://github.com/my-otter-self/MAS_period/actions/workflows/check.yml">
@@ -23,25 +22,22 @@
   </a>
 </p>
 
-🌍[简体中文](READNE_zhCN.md)
+## 🌟 特色
 
-## 🌟 Features
+  * 提醒你喝水
+  * 有关于水合作用的信息
+  * 有关于脱水作用的信息
 
-  * Water drinking reminders
-  * Information about hydration
-  * Information about dehydration
-
-You can check the full list at the [wiki](https://github.com/my-otter-self/mas_hydro/wiki/%F0%9F%8C%9F-Features-(full)).
+你可以在 [wiki](https://github.com/my-otter-self/mas_hydro/wiki/%F0%9F%8C%9F-Features-(full)) 上查看全部.
 
 
-## ❓ Download instructions
+## ❓ 下载
+你可以在 [wiki](https://github.com/my-otter-self/mas_hydro/wiki/%E2%9D%93-Download-instructions) 上查看下载的相关细节.
+注意：本子模组已经合并至话题整合包Dialogue-Packs，所以不会在此存储库放出汉化版Release
 
-You can check the detailed download instructions at the [wiki](https://github.com/my-otter-self/mas_hydro/wiki/%E2%9D%93-Download-instructions).
+## ✒️ 作者
 
-
-## ✒️ Authors
-
-This submod was created by these people:
+这个子模组由以下人员创建:
 
 <p align="center">
   <a href="https://github.com/my-otter-self/mas_hydro/graphs/contributors">
@@ -49,12 +45,13 @@ This submod was created by these people:
   </a>
 </p>
 
-**Note:** CC BY-NC-ND 4.0 only covers content created by authors, contributors or maintainers of this mod (repository) and does not cover
-anything that was created by third party (as attributed in [Credits](https://github.com/my-otter-self/MAS_hydro/wiki/%F0%9F%93%9D-Credits) wiki page.)
+**注意:** CC BY-NC-ND 4.0只包括由作者、贡献者或本模型（资源库）的维护者创建的内容，不包括任何由第三方创建的内容（如[Credits](https://github.com/my-otter-self/MAS_hydro/wiki/%F0%9F%93%9D-Credits)维基页面中的归属）。
 
 
-## 💬 Join our Discord
+## 💬 加入otter的discord！
 
-We're up to chat! Come join us at our Discord server [here](https://mon.icu/discord).
+我们开始聊天了! 来加入我们的[Discord](https://mon.icu/discord)吧.
 
 [![Discord server invitation](https://discordapp.com/api/guilds/970747033071804426/widget.png?style=banner3)](https://mon.icu/discord)
+
+🌍 Sir.P、终不似、少年游
